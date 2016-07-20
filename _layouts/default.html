@@ -13,30 +13,190 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <style type="text/css">
+      *{
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	#wrapper{
+	 	width: 900px;
+	 	margin: 0 auto;
+	 	border: 2px solid #ccc;
+
+    }
+	 #header{
+	 	height: 250px;
+	 	background-color: rgb(0,160,198);
+	 }
+	 h1{
+	 	font-family: didot;
+	 	font-size: 50px;
+	 	color: #fff;
+	 	text-align: center;
+	 }
+	 h2{
+	 	font-family: didot;
+	 	color:#fff;
+	 	text-align: center;
+	 }
+	 #nav{
+	 	/*height: 50px;*/
+	 	background-color: rgb(228,188,150);
+	 }
+	   #nav ul{
+	   	list-style-type: none;
+	   }
+	    #nav ul li{
+	    	width: auto;
+	    	float: left;
+	    	border-left: 1px solid #333;
+	    }
+	      #nav ul li a{
+	      	display: block;
+	      	padding: 10px 20px;
+	      	color: #fff;
+	      	font-size: 18px;
+	      	font-family: Arial;
+	      	font-weight: bold;
+	      	text-decoration: none;
+	      }
+	       #nav ul li a:hover{
+	       	background-color: orange;
+	       	color: gray;
+	       }
+	 /*#content{
+	 	
+	 }*/
+	  #main_content{
+	  	width: 100%;
+	  	min-height: 400px;
+	  	float: left;
+	  	background-color:#fff;
+	  }
+	  /*#sidebar{
+	  	width: 350px;
+	  	background-color: rgb(93,34,20);
+	  	min-height: 400px;
+	  	float: right;
+	  }*/
+	 #footer{
+	 	width: 100%
+	 	height: 400px;
+	 	background-color: gray;
+	 	}
+	 .clear{
+	 	clear:both;
+	 }
+	 .posts{
+	 	width: 70%;
+	 	float: left;
+	 }
+	 .topcontent{
+	 	width: 35%;
+	 	border-radius: 5px;
+	 	margin-left: 15px;
+	 }
+	 .bottomcontent{
+	 	width: 35%;
+	 	border-radius: 5px;
+	 	margin-left: 15px;
+	 }
+	 .toprightcontent{
+	 	width: 35%;
+	 	border-radius: 5px;
+	 	position: absolute;
+	 	top: 300px;
+        right: 500px;
+	 }
+	 .bottomrightcontent{
+        width: 35%;
+	 	border-radius: 5px;
+	 	position: absolute;
+	 	top: 615px;
+	 	right: 500px;
+	 }
+	 .sidebar{
+	 	width: 25%;
+	 	position: absolute;
+	 	top: 320px;
+	 	left: 1200px;
+	 	background-color: orange;
+	 	border-radius: 5px;
+	 	margin-right: 5%;
+	 }
+      
+    </style>
   </head>
 
   <body>
-    <div class="wrapper-masthead">
+    
+    <div class="wrapper">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <h1 class="Design Neverland"><a href="{{ site.baseurl }}/">{{ Design Neverland }}</a></h1>
+            <p class="site-description">{{ Adventures in Design + Development }}</p>
           </div>
 
           <nav>
+            <ul>
+		<li><a href="#">Folio</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<div class="clear"></div>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
       </div>
     </div>
+      <div id="content">
+	<div id="main_content">
+		<div class="posts">
+	
+	<article class="topcontent">
+	<h3>Post 1</h3>
+	<content>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id molestie erat. Donec et pellentesque magna. Morbi gravida justo ipsum, vitae maximus velit luctus interdum. Donec eu sagittis elit, quis laoreet ligula. Integer viverra laoreet metus, a mattis sapien hendrerit nec. Duis suscipit vel dui rhoncus sagittis. Quisque eget mi at massa mattis convallis id vitae ante. Vivamus varius turpis ex, sed fringilla velit imperdiet non. Nunc eu viverra ante. Maecenas quam diam, dignissim in rhoncus et, rutrum in metus. Phasellus pharetra eros risus, sit amet rutrum magna volutpat nec. Integer a sapien sagittis, dictum lectus sed, pulvinar felis. Mauris eget felis tristique, pharetra nunc non, molestie orci. Suspendisse tempus diam imperdiet, ultrices ex porta, sollicitudin tellus.</article></content>
+	
+	<article class="bottomcontent">
+	<h3>Post 2</h3>
+	<content>
+	Aliquam est purus, efficitur a dignissim quis, condimentum tempus neque. Sed suscipit, augue non aliquam dictum, nulla massa cursus sapien, vitae mattis nulla enim et urna. Pellentesque efficitur sem non enim tristique vehicula quis eget eros. Nam elementum quis nulla et tincidunt. Maecenas dignissim nisi nisi, vitae dignissim ligula aliquam et. Morbi cursus imperdiet pharetra. Phasellus sapien leo, porta ac purus eu, dignissim varius nisl. Suspendisse vestibulum massa non quam faucibus mollis. Aliquam aliquet suscipit lorem in dictum. Pellentesque tempus sit amet libero vel luctus. Suspendisse quis ipsum vel sapien iaculis suscipit a ac augue. Aenean non dolor ipsum. Ut lobortis tempor neque mollis pulvinar.</article></content>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+	<article class="toprightcontent">
+	<h3>Post 3</h3>
+	<content>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id molestie erat. Donec et pellentesque magna. Morbi gravida justo ipsum, vitae maximus velit luctus interdum. Donec eu sagittis elit, quis laoreet ligula. Integer viverra laoreet metus, a mattis sapien hendrerit nec. Duis suscipit vel dui rhoncus sagittis. Quisque eget mi at massa mattis convallis id vitae ante. Vivamus varius turpis ex, sed fringilla velit imperdiet non. Nunc eu viverra ante. Maecenas quam diam, dignissim in rhoncus et, rutrum in metus. Phasellus pharetra eros risus, sit amet rutrum magna volutpat nec. Integer a sapien sagittis, dictum lectus sed, pulvinar felis. Mauris eget felis tristique, pharetra nunc non, molestie orci. Suspendisse tempus diam imperdiet, ultrices ex porta, sollicitudin tellus.</article></content>
+	
+	<article class="bottomrightcontent">
+	<h3>Post 4</h3>
+	<content>
+	Aliquam est purus, efficitur a dignissim quis, condimentum tempus neque. Sed suscipit, augue non aliquam dictum, nulla massa cursus sapien, vitae mattis nulla enim et urna. Pellentesque efficitur sem non enim tristique vehicula quis eget eros. Nam elementum quis nulla et tincidunt. Maecenas dignissim nisi nisi, vitae dignissim ligula aliquam et. Morbi cursus imperdiet pharetra. Phasellus sapien leo, porta ac purus eu, dignissim varius nisl. Suspendisse vestibulum massa non quam faucibus mollis. Aliquam aliquet suscipit lorem in dictum. Pellentesque tempus sit amet libero vel luctus. Suspendisse quis ipsum vel sapien iaculis suscipit a ac augue. Aenean non dolor ipsum. Ut lobortis tempor neque mollis pulvinar.</article></content>
+    
+	</div>
+	
+	<!--<div id="sidebar">
+		<h3>Archive</h3>
+	</div>-->
+	<div class="clear"></div>
+</div>
+<aside>
+<div class="sidebar">
+	<article>
+		<h3>Archive</h3>
+		<p>
+			Suspendisse neque felis, maximus quis tincidunt in, laoreet sed nulla. Proin magna neque, venenatis in scelerisque ac, egestas sed justo. In hac habitasse platea dictumst. Nulla pharetra lorem eget lectus vulputate, eget malesuada nisi imperdiet. Maecenas rhoncus, augue non posuere ullamcorper, dolor ligula malesuada turpis, in maximus mauris leo ac turpis. Vivamus eu ex finibus, accumsan dolor sit amet, consequat tellus. Sed interdum dictum turpis gravida porttitor. Nam laoreet massa vehicula est volutpat pellentesque. Etiam congue, felis at ullamcorper euismod, dolor felis ullamcorper nibh, ac venenatis ligula quam non quam. Nunc imperdiet lorem sit amet metus placerat lacinia. Sed maximus lorem ornare, semper neque ac, feugiat odio. Proin vehicula est sed mollis semper. Aliquam erat volutpat. Nam pharetra orci mauris, quis porttitor nunc tincidunt vel. Curabitur felis eros, elementum nec volutpat eget, consectetur a tellus. Vestibulum a interdum leo.
+			Etiam suscipit enim eget sem tempor varius. Quisque eleifend vitae nisl vel iaculis. Mauris urna sem, fringilla id mi nec, rutrum porta elit. Etiam dapibus consectetur maximus. Integer leo odio, finibus a fringilla et, mattis sed lacus. Nullam quam sapien, ultrices ac tristique in, varius in dui. Fusce fermentum sapien massa, at vestibulum dolor tempor ac. Curabitur consectetur 
+		</p>
+	</article>
+	</div>
+</aside>
+    
 
     <div class="wrapper-footer">
       <div class="container">
@@ -45,7 +205,21 @@
         </footer>
       </div>
     </div>
+       
+<footer>
+<div id="footer">
+<p>Copyright @2016 Tiger Lily MacFaydian</p>
+<p>Services
+<br>
+Branding
+<br>
+Infographics
+<br>
+Web Sites
+</p>
+	</div>
 
+</footer>
     {% include analytics.html %}
   </body>
 </html>
