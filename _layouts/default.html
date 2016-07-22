@@ -23,29 +23,35 @@
 	 	width: 900px;
 	 	margin: 0 auto;
 	 	border: 2px solid #ccc;
-
     }
 	 #header{
 	 	height: 250px;
 	 	background-color: rgb(0,160,198);
 	 }
-	 h1{
+	 #header h1{
 	 	font-family: didot;
 	 	font-size: 50px;
 	 	color: #fff;
 	 	text-align: center;
+	 	margin-top: 0;
 	 }
-	 h2{
+	 #header h2{
 	 	font-family: didot;
 	 	color:#fff;
 	 	text-align: center;
 	 }
+	nav {
+		width: 100%;
+		margin-top: 0;
+	}
 	 #nav{
-	 	/*height: 50px;*/
+	 	height: 45px;
 	 	background-color: rgb(228,188,150);
 	 }
 	   #nav ul{
 	   	list-style-type: none;
+	   	margin: 0;
+	   	padding-left: initial;
 	   }
 	    #nav ul li{
 	    	width: auto;
@@ -60,13 +66,16 @@
 	      	font-family: Arial;
 	      	font-weight: bold;
 	      	text-decoration: none;
+	      	margin: 0;
+	      }
+	      #nav ul li:first-child{
+						border-left: 0;
 	      }
 	       #nav ul li a:hover{
 	       	background-color: orange;
 	       	color: gray;
 	       }
 	 /*#content{
-	 	
 	 }*/
 	  #main_content{
 	  	width: 100%;
@@ -81,9 +90,16 @@
 	  	float: right;
 	  }*/
 	 #footer{
-	 	width: 100%
+	 	width: 100%;
 	 	height: 400px;
 	 	background-color: gray;
+	 	padding: 20px;
+	 	}
+	 	footer {
+	 		padding: 0;
+	 	}
+	 	#footer p {
+	 		margin: 0;
 	 	}
 	 .clear{
 	 	clear:both;
@@ -125,77 +141,65 @@
 	 	border-radius: 5px;
 	 	margin-right: 5%;
 	 }
-      
+		#main_content>div {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 20px;
+		}
+	 .sidebar-left {
+	 		width: 25%;
+	 		float: left;
+	 }
+	 .sidebar-right {
+	 		width: 25%;
+	 		float: left;
+	 }
+	 .middle {
+	 		width: 50%;
+	 		float: left;
+	 }
+	 		@media screen and (max-width: 800px) {
+			#main_content>div {
+				width: 100%;
+			}
+		}
     </style>
   </head>
    <body>
 
-     <header>
- 
-    
-    <div id="wrapper"></div>
-       <div id="header">
-	<h1>Design Neverland</h1>
-    <h2>Adventures in Design + Development</h2>
+
+   	<div id="header">
+			<h1>Design Neverland.</h1>
+    	<h2>Adventures in Design + Development</h2>
     </div>
     <div id="nav">
-    
-      <nav>
+			<nav>
         <ul>
-		<li><a href="#">Folio</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Contact</a></li>
-	    </ul>
-        
-	<div class="clear"></div>
-           
-          </nav>
-        </header>
-      </div>
-    </div>
-      <div id="content">
-	<div id="main_content">
-		<div class="posts">
-	{{ content }}
-	<article class="topcontent">
-	<h3>Post 1</h3>
-	<content>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id molestie erat. Donec et pellentesque magna. Morbi gravida justo ipsum, vitae maximus velit luctus interdum. Donec eu sagittis elit, quis laoreet ligula. Integer viverra laoreet metus, a mattis sapien hendrerit nec. Duis suscipit vel dui rhoncus sagittis. Quisque eget mi at massa mattis convallis id vitae ante. Vivamus varius turpis ex, sed fringilla velit imperdiet non. Nunc eu viverra ante. Maecenas quam diam, dignissim in rhoncus et, rutrum in metus. Phasellus pharetra eros risus, sit amet rutrum magna volutpat nec. Integer a sapien sagittis, dictum lectus sed, pulvinar felis. Mauris eget felis tristique, pharetra nunc non, molestie orci. Suspendisse tempus diam imperdiet, ultrices ex porta, sollicitudin tellus.</content></article>
-	
-	<article class="bottomcontent">
-	<h3>Post 2</h3>
-	<content>
-	Aliquam est purus, efficitur a dignissim quis, condimentum tempus neque. Sed suscipit, augue non aliquam dictum, nulla massa cursus sapien, vitae mattis nulla enim et urna. Pellentesque efficitur sem non enim tristique vehicula quis eget eros. Nam elementum quis nulla et tincidunt. Maecenas dignissim nisi nisi, vitae dignissim ligula aliquam et. Morbi cursus imperdiet pharetra. Phasellus sapien leo, porta ac purus eu, dignissim varius nisl. Suspendisse vestibulum massa non quam faucibus mollis. Aliquam aliquet suscipit lorem in dictum. Pellentesque tempus sit amet libero vel luctus. Suspendisse quis ipsum vel sapien iaculis suscipit a ac augue. Aenean non dolor ipsum. Ut lobortis tempor neque mollis pulvinar.</content></article>
+					<li><a href="#">Folio</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+	    	</ul>
 
-	<article class="toprightcontent">
-	<h3>Post 3</h3>
-	<content>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id molestie erat. Donec et pellentesque magna. Morbi gravida justo ipsum, vitae maximus velit luctus interdum. Donec eu sagittis elit, quis laoreet ligula. Integer viverra laoreet metus, a mattis sapien hendrerit nec. Duis suscipit vel dui rhoncus sagittis. Quisque eget mi at massa mattis convallis id vitae ante. Vivamus varius turpis ex, sed fringilla velit imperdiet non. Nunc eu viverra ante. Maecenas quam diam, dignissim in rhoncus et, rutrum in metus. Phasellus pharetra eros risus, sit amet rutrum magna volutpat nec. Integer a sapien sagittis, dictum lectus sed, pulvinar felis. Mauris eget felis tristique, pharetra nunc non, molestie orci. Suspendisse tempus diam imperdiet, ultrices ex porta, sollicitudin tellus.</content></article>
-	
-	<article class="bottomrightcontent">
-	<h3>Post 4</h3>
-	<content>
-	Aliquam est purus, efficitur a dignissim quis, condimentum tempus neque. Sed suscipit, augue non aliquam dictum, nulla massa cursus sapien, vitae mattis nulla enim et urna. Pellentesque efficitur sem non enim tristique vehicula quis eget eros. Nam elementum quis nulla et tincidunt. Maecenas dignissim nisi nisi, vitae dignissim ligula aliquam et. Morbi cursus imperdiet pharetra. Phasellus sapien leo, porta ac purus eu, dignissim varius nisl. Suspendisse vestibulum massa non quam faucibus mollis. Aliquam aliquet suscipit lorem in dictum. Pellentesque tempus sit amet libero vel luctus. Suspendisse quis ipsum vel sapien iaculis suscipit a ac augue. Aenean non dolor ipsum. Ut lobortis tempor neque mollis pulvinar.</content></article>
-    
-	</div>
-	
-	<!--<div id="sidebar">
-		<h3>Archive</h3>
-	</div>-->
-	<div class="clear"></div>
-</div>
-<aside>
-<div class="sidebar">
-	<article>
-		<h3>Archive</h3>
-		<p>
-			Suspendisse neque felis, maximus quis tincidunt in, laoreet sed nulla. Proin magna neque, venenatis in scelerisque ac, egestas sed justo. In hac habitasse platea dictumst. Nulla pharetra lorem eget lectus vulputate, eget malesuada nisi imperdiet. Maecenas rhoncus, augue non posuere ullamcorper, dolor ligula malesuada turpis, in maximus mauris leo ac turpis. Vivamus eu ex finibus, accumsan dolor sit amet, consequat tellus. Sed interdum dictum turpis gravida porttitor. Nam laoreet massa vehicula est volutpat pellentesque. Etiam congue, felis at ullamcorper euismod, dolor felis ullamcorper nibh, ac venenatis ligula quam non quam. Nunc imperdiet lorem sit amet metus placerat lacinia. Sed maximus lorem ornare, semper neque ac, feugiat odio. Proin vehicula est sed mollis semper. Aliquam erat volutpat. Nam pharetra orci mauris, quis porttitor nunc tincidunt vel. Curabitur felis eros, elementum nec volutpat eget, consectetur a tellus. Vestibulum a interdum leo.
-			Etiam suscipit enim eget sem tempor varius. Quisque eleifend vitae nisl vel iaculis. Mauris urna sem, fringilla id mi nec, rutrum porta elit. Etiam dapibus consectetur maximus. Integer leo odio, finibus a fringilla et, mattis sed lacus. Nullam quam sapien, ultrices ac tristique in, varius in dui. Fusce fermentum sapien massa, at vestibulum dolor tempor ac. Curabitur consectetur 
-		</p>
-	</article>
-	</div>
-</aside>
-    
+	<!-- <div class="clear"></div> -->
+			</nav>
+		</div>
+<div class="clear"></div>
+
+      <div id="content">
+			<div id="main_content">
+
+					<div class="sidebar-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, sed iste temporibus porro voluptates maiores velit. Libero, blanditiis, odit, harum nostrum rem eum sunt omnis maxime optio adipisci voluptatibus voluptate ex quisquam expedita dignissimos temporibus atque fugiat dolore itaque iure. Commodi, nihil, sequi totam iste facilis fugit dolorem atque quae!</div>
+					<div class="middle">
+
+							{{ content }}
+
+					</div>
+					<div class="sidebar-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptatum, minus, molestiae ipsam illo quisquam perferendis maiores minima rerum autem corporis veniam sint maxime molestias dolore at quaerat quia magnam! Modi, corporis, fugit, architecto earum quam mollitia delectus praesentium numquam aperiam porro distinctio iste a impedit velit doloremque dicta non!</div>
+			</div>
+			</div>
+
+
 
     <div class="wrapper-footer">
       <div class="container">
@@ -204,7 +208,7 @@
         </footer>
       </div>
     </div>
-       
+
 <footer>
 <div id="footer">
 <p>Copyright @2016 Tiger Lily MacFaydian</p>
