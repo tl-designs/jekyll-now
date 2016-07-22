@@ -7,9 +7,12 @@
 	  <div class="date">
 	    Written on {{ page.date | date: "%B %e, %Y" }}
 	  </div>
+      {% if page.mood %}
+      <p>This is my current mood</p>
       <div class="mood">
         {{page.mood}}
 	</div>
+      {% endif %}
 	<div class="half half-right">
 	  <div class="entry">
 	    {{ content }}
