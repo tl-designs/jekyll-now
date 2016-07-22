@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 ---
 
 
@@ -10,10 +11,14 @@ layout: default
 	    Written on {{ page.date | date: "%B %e, %Y" }}
 	  </div>
       {% if page.mood %}
-      <p>This is my current mood</p>
-      <div class="mood">
-        {{page.mood}}
-	</div>
+      <p>Current Mood:</p>
+      {% if page.mood == "happy" %}
+         :)
+      {% elsif page.mood == "sad" %}
+         :(
+      {% else %}
+          :$
+      {% endif %}
       {% endif %}
 	<div class="half half-right">
 	  <div class="entry">
