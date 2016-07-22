@@ -3,6 +3,7 @@ published: true
 layout: example
 mood: thoughtful
 ---
-## A New Post
+![chicago mural]({{site.baseurl}}/_posts/lssa.jpg)
+![collage.jpg]({{site.baseurl}}/_posts/collage.jpg)
+![jcsa.jpg]({{site.baseurl}}/_posts/jcsa.jpg)
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
