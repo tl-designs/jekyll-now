@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <style type="text/css">
+      *{
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	#wrapper{
+	 	width: 900px;
+	 	margin: 0 auto;
+	 	border: 2px solid #ccc;
+    }
+	 #header{
+	 	height: 250px;
+	 	background-color: rgb(0,160,198);
+	 }
+	 #header h1{
+	 	font-family: didot;
+	 	font-size: 50px;
+	 	color: #fff;
+	 	text-align: center;
+	 	margin-top: 0;
+	 }
+	 #header h2{
+	 	font-family: didot;
+	 	color:#fff;
+	 	text-align: center;
+	 }
+	nav {
+		width: 100%;
+		margin-top: 0;
+	}
+	 #nav{
+	 	height: 45px;
+	 	background-color: rgb(228,188,150);
+	 }
+	   #nav ul{
+	   	list-style-type: none;
+	   	margin: 0;
+	   	padding-left: initial;
+	   }
+	    #nav ul li{
+	    	width: auto;
+	    	float: left;
+	    	border-left: 1px solid #333;
+	    }
+	      #nav ul li a{
+	      	display: block;
+	      	padding: 10px 20px;
+	      	color: #fff;
+	      	font-size: 18px;
+	      	font-family: Arial;
+	      	font-weight: bold;
+	      	text-decoration: none;
+	      	margin: 0;
+	      }
+	      #nav ul li:first-child{
+						border-left: 0;
+	      }
+	       #nav ul li a:hover{
+	       	background-color: orange;
+	       	color: gray;
+	       }
+	 /*#content{
+	 }*/
+	  #main_content{
+	  	width: 100%;
+	  	min-height: 400px;
+	  	float: left;
+	  	background-color:#fff;
+	  }
+	  /*#sidebar{
+	  	width: 350px;
+	  	background-color: rgb(93,34,20);
+	  	min-height: 400px;
+	  	float: right;
+	  }*/
+	 #footer{
+	 	width: 100%;
+	 	height: 400px;
+	 	background-color: gray;
+	 	padding: 20px;
+	 	}
+	 	footer {
+	 		padding: 0;
+	 	}
+	 	#footer p {
+	 		margin: 0;
+	 	}
+	 .clear{
+	 	clear:both;
+	 }
+	 .posts{
+	 	width: 70%;
+	 	float: left;
+	 }
+	 .topcontent{
+	 	width: 35%;
+	 	border-radius: 5px;
+	 	margin-left: 15px;
+	 }
+	 .bottomcontent{
+	 	width: 35%;
+	 	border-radius: 5px;
+	 	margin-left: 15px;
+	 }
+	 .toprightcontent{
+	 	width: 35%;
+	 	border-radius: 5px;
+	 	position: absolute;
+	 	top: 300px;
+        right: 500px;
+	 }
+	 .bottomrightcontent{
+        width: 35%;
+	 	border-radius: 5px;
+	 	position: absolute;
+	 	top: 615px;
+	 	right: 500px;
+	 }
+	 .sidebar{
+	 	width: 25%;
+	 	position: absolute;
+	 	top: 320px;
+	 	left: 1200px;
+	 	background-color: orange;
+	 	border-radius: 5px;
+	 	margin-right: 5%;
+	 }
+		#main_content>div {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 20px;
+		}
+	 .sidebar-left {
+	 		width: 25%;
+	 		float: left;
+	 }
+	 .sidebar-right {
+	 		width: 25%;
+	 		float: left;
+	 }
+	 .middle {
+	 		width: 50%;
+	 		float: left;
+	 }
+	 		@media screen and (max-width: 800px) {
+			#main_content>div {
+				width: 100%;
+			}
+		}
+    </style>
+  </head>
+   <body>
+
+
+   	<div id="header">
+			<h1>Design Neverland</h1>
+    	<h2>Adventures in Design + Development</h2>
+    </div>
+    <div id="nav">
+			<nav>
+        <ul>
+					<li><a href="#">Folio</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+	    	</ul>
+
+	<!-- <div class="clear"></div> -->
+			</nav>
+		</div>
+<div class="clear"></div>
+
+      <div id="content">
+			<div id="main_content">
+
+					<div class="sidebar-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, sed iste temporibus porro voluptates maiores velit. Libero, blanditiis, odit, harum nostrum rem eum sunt omnis maxime optio adipisci voluptatibus voluptate ex quisquam expedita dignissimos temporibus atque fugiat dolore itaque iure. Commodi, nihil, sequi totam iste facilis fugit dolorem atque quae!</div>
+					<div class="middle">
+
+							{{ content }}
+
+					</div>
+					<div class="sidebar-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptatum, minus, molestiae ipsam illo quisquam perferendis maiores minima rerum autem corporis veniam sint maxime molestias dolore at quaerat quia magnam! Modi, corporis, fugit, architecto earum quam mollitia delectus praesentium numquam aperiam porro distinctio iste a impedit velit doloremque dicta non!</div>
+			</div>
+			</div>
+
+
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+<footer>
+<div id="footer">
+<p>Copyright @2016 Tiger Lily MacFaydian</p>
+<p>Services
+<br>
+Branding
+<br>
+Infographics
+<br>
+Web Sites
+</p>
+	</div>
+
+</footer>
+    {% include analytics.html %}
+  </body>
+</html>
