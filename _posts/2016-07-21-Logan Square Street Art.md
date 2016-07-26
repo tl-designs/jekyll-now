@@ -2,6 +2,7 @@
 published: true
 layout: example
 mood: thoughtful
+animal: bunny
 ---
 ![chicago mural]({{site.baseurl}}/_posts/lssa.jpg)
 ![collage.jpg]({{site.baseurl}}/_posts/collage.jpg)
