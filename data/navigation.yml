@@ -1,0 +1,9 @@
+main:
+  - title: "Folio"
+    url: /folio
+    
+    - title: "About"
+    url: #
+    
+    - title: "Contact"
+    url: #
