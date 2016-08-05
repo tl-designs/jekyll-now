@@ -1,13 +1,30 @@
-
-<nav>
-        <ul>
-          {% for link in site.data.navigation.main %}
-            <!--<li><a href="{{ link.url }}">Folio</a></li>-->
-          {% endfor %}
-					<li><a href="/Folio">Folio</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="Process.html">Contact</a></li>
-	    	</ul>
-
-	<!-- <div class="clear"></div> -->
-			</nav>
+<ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a>
+      <ul>
+        <li><a href="#">Webdesign</a></li>
+        <li><a href="#">Development</a></li>
+        <li><a href="#">App Design</a></li>
+        <li><a href="#">Identity</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a href="#">Level 2</a></li>
+            <li><a href="#">Level 2</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul> <!-- End "Level 3" ul -->
+            </li> <!-- End "Level 2" > "Level 3" li -->
+            <li><a href="#">Level 2</a></li>
+          </ul> <!-- End "Level 2" ul -->
+        </li> <!-- End "Identity" > "Level 2" li -->
+        <li><a href="#">Marketing</a></li>
+      </ul> <!-- End "Portfolio" ul -->
+     </li> <!-- End "Portfolio" li -->
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>  <!-- End "nav" -->
