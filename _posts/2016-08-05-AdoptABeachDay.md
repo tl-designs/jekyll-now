@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ![Environmental Post-01.png]({{site.baseurl}}/_posts/Environmental Post-01.png)
 ## A New Post
