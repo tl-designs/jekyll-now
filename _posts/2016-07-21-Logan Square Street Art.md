@@ -1,6 +1,6 @@
 ---
 published: true
-layout: example
+layout: default
 mood: thoughtful
 animal: bunny
 ---
