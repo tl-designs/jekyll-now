@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: home
 title: About
 permalink: /about/
+published: true
 ---
 
 Some information about you!
