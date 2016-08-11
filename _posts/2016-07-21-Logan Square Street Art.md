@@ -9,4 +9,4 @@ animal: bunny
 ![chicago mural]({{site.baseurl}}/images/lssa.jpg)
 ![collage.jpg]({{site.baseurl}}/images/collage.jpg)
 ![jcsa.jpg]({{site.baseurl}}/images/jcsa.jpg)
-![creatures.jpg]({{site.baseurl}}//images/creatures.jpg)
+![creatures.jpg]({{site.baseurl}}/images/creatures.jpg)
