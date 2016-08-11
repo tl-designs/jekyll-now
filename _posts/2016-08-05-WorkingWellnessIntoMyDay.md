@@ -16,4 +16,3 @@ title: Working Wellness Into My Day
   ![yoga.jpg]({{site.baseurl}}/images/yoga.jpg)
   ![diffuser.jpg]({{site.baseurl}}/images/diffuser.jpg)
   ![acupuncture.jpg]({{site.baseurl}}/images/acupuncture.jpg)
-  ![massage2.jpg]({{site.baseurl}}/images/massage2.jpg)
