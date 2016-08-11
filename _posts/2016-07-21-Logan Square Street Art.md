@@ -9,8 +9,4 @@ animal: bunny
 ![chicago mural]({{site.baseurl}}/images/lssa.jpg)
 ![collage.jpg]({{site.baseurl}}/images/collage.jpg)
 ![jcsa.jpg]({{site.baseurl}}/images/jcsa.jpg)
-<div>
-      <a class="example-image-link" href="({{site.baseurl}}/images/lssa.jpg)" data-lightbox="example-1"><img class="example-image" src="![collage.jpg]({{site.baseurl}}/images/collage.jpg)" alt="image-1"/>
-      </a>
-      <a class="example-image-link" href="({{site.baseurl}}/images/collage.jpg)" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="![collage.jpg]({{site.baseurl}}/images/collage.jpg)" alt="image-1"/></a>
-     </div>
+
