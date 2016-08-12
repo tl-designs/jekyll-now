@@ -1,6 +1,7 @@
 ---
 published: true
 title: Adopt a Beach Day
+layout: default
 ---
 ![Environmental Post-01.png]({{site.baseurl}}/images/Environmental Post-01.png)
 
